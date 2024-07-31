@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/ressources/css/style.css">
+  <link rel='stylesheet' href="/ressources/css/login-styles.css">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <a href='../index.html' class="logo">ZXWL</a>
+      <div class="navbar">
+        <ul>
+          <li><a href="../index.html">ACCUEIL</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+          <li><a href="services.html">SERVICES</a></li>
+          <li><a href="tarifs.html">TARIFS</a></li>
+          <li><a href="login.html">SE CONNECTER</a></li>
+        </ul>
+      </div>
+
+      <img class="menu-icon hamburger-menu" src="/assets/icons/suite.png">
+      <img class="menu-icon close-menu" src="/assets/icons/close.png">
+    </nav>
+  </header>
+
+  <div class="form-wrapper">
+    <form>
+      <div class="form-field">
+        <label>Adresse mail</label>
+        <input type="email" placeholder="xyz@mail.com">
+      </div>
+
+      <div class="form-field">
+        <label>Mot de passe</label>
+        <input type="password" type="password" >
+      </div>
+
+      <button id='login-btn' type="submit">Se connecter</button>
+      <div class="validation-div">
+        <p id="email-error-msg">Veuillez saisir une adresse mail correcte !</p>
+        <p id="pwd-error-msg">Veuillez saisir un mot de passe correct !</p>
+      </div>
+    </form>
+    <div class="no-account-text">Vous n'avez pas de compte ? <a href="#" id="sign-up-link">créez un compte</a></div>
+  </div>
+
+
+  <script src="/ressources/javascript/hamburger-menu.js"></script>
+</body>
+</html>

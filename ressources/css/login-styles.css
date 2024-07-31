@@ -1,0 +1,114 @@
+header {
+  height:100%;
+  background-image: none;
+  height:20vh;
+}
+
+body {
+  background-image: url(/assets/images/backgrounds/background.jpg);
+  background-position:center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height:100vh;
+}
+
+.form-wrapper {
+  width:100vw;
+  height:40vh;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+form {
+  display:flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height:100%;
+}
+
+.form-field{
+  display:flex;
+  flex-direction: column;
+  width:400px;
+
+}
+input {
+  padding:10px;
+  border:none;
+  outline: none;
+  border-radius:7px;
+}
+
+label {
+  padding:10px 0;
+  font-weight:bold;
+  color:white;
+}
+
+#login-btn {
+  color:white;
+  text-decoration: none;
+  border-radius:10px;
+  padding:12px 60px;
+  background-color: rgba(0,0,0,.7);
+  font-size:20px;
+  transition: .3s;
+  cursor: pointer;
+  font-weight:bold;
+  outline:none;
+  border:none;
+}
+
+#login-btn:hover {
+  background-color: rgba(245,245,245,.9);
+  color:black;
+  box-shadow: 0px 0px 80px rgba(245,245,245,.4); 
+}
+
+#sign-up-link {
+  color:#e7ab96;
+  text-decoration: none;
+}
+#sign-up-link:hover {
+  text-decoration: underline;
+}
+
+.no-account-text {
+  color:white;
+}
+
+.validation-div p {
+  color:rgba(232, 65, 24,1.0);
+  font-size:13px;
+}
+
+#pwd-error-msg {
+  display:none;
+}
+
+#email-error-msg {
+  display:none;
+}
+
+
+@media screen and (max-width:575px) {
+  .form-wrapper {
+    width:100vw;
+  }
+  form {
+    width:100%;
+    align-items: center;
+    gap:20px;
+  }
+  input {
+    width:90%;
+  }
+  .form-field {
+    width:300px;
+  }
+
+  .no-account-text {
+    font-size:12px;
+  }
+}

@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+
+
+body {  
+  background-position:center;
+  background-size:cover;
+  background-repeat: no-repeat;
+  padding:0;
+  margin:0;
+  background-image: url(/assets/images/backgrounds/background.jpg);
+  height:fit-content
+}
+
+header {
+  background-image:none;
+  height:15vh;
+}
+
+.offers-container {
+  display:flex;
+  width:100vw;
+  align-items: center;
+  justify-content: center;
+  gap:40px;
+  margin:auto;
+  flex-wrap:wrap;
+}
+
+.offer {
+  width:350px;
+  height:600px;
+  background-color: rgba(116, 125, 140,.7);
+  border-radius:20px;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow:2px 2px 5px rgba(245,245,245,.1);
+  justify-content:space-around;
+}
+
+.offer-line {
+  display:flex;
+  font-size:14px;
+  width:100%;
+  justify-content: flex-start;
+  padding:2px 20px;
+}
+
+.offer-line img {
+  margin-right:20px;
+}
+
+.price-div {
+  display:flex;
+  align-items: center;
+}
+
+.price {
+  font-size:35px;
+  font-weight: bold;
+  color:rgba(255,255,255,.85);
+
+}
+.period {
+  color:rgba(255,255,255,.7);
+}
+
+.offer-btn {
+  color:white;
+  text-decoration: none;
+  border-radius:10px;
+  padding:12px 60px;
+  background-color: rgba(0,0,0,.7);
+  font-size:20px;
+  transition: .3s;
+  font-weight:bold;
+}
+
+.offer-btn:hover {
+  background-color: rgba(245,245,245,.9);
+  color:black;
+  box-shadow: 0px 0px 80px rgba(245,245,245,.4); 
+}
+
+.offer-description {
+  display:flex;
+  flex-direction: column;
+  gap:10px;
+  height:40%;
+}
+
+
+
+.offer-title {
+ /*  font-family:'Montserrat',sans-serif; */
+  font-size:25px;
+}
+
+@media screen and (max-width:1250px) {
+
+  body {
+    height:200vh;
+  }
+
+  .offers-container {
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  header {
+    font-size:12px;
+  }
+  nav li  {
+    padding:2px;
+  }
+
+
+}
+
+@media screen and (max-width:805px) {
+
+  body {
+    height:200vh;
+  }
+
+  .offers-container {
+    width:100vw;
+    gap:40px;
+}
+
+  .offer {
+    width:100%;
+    max-width: 300px;
+    height:550px;
+  }
+
+  header {
+    width:100vw;
+  }
+  
+}
+
+/* @media screen and (max-width:275px) {
+  .header {
+    width:100vw;
+  }
+  .offers-container {
+    width:250px;
+  }
+
+  .offer {
+    width:250px;
+  }
+
+} */
+
+@media screen and (max-width:575px) {
+  
+  body {
+    height:300vh;
+  }
+
+  .offers-container{
+    width:100%;
+    margin:100px 0;
+    padding:0;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .offer{
+    width:400px;
+    margin:0;
+    min-height:600px;
+  }
+}
+
+@media screen and (max-width:450px) {
+
+
+
+  .offers-container{
+    width:100vw;
+    margin:80px 0;
+    padding:100;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .offer {
+    width:80%;
+    min-height:600px;
+    margin:0;
+  }
+
+  .offer-line {
+    max-width: 100%;
+    padding:5px;
+  }
+}
